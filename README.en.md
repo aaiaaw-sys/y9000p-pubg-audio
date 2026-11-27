@@ -4,7 +4,7 @@
 
 A narrowly scoped Microsoft Loudness Equalization configuration toolkit based on a Lenovo Legion Y9000P IAX10 / Windows 11 / Realtek / Nahimic / Elevoc / Apple EarPods case. It delegates to the Microsoft WM LFX APO through an existing Equalizer APO PRE child binding, preserves the OEM CompositeFX registry configuration, and provides guarded per-value rollback.
 
-The original device-specific configuration was reported effective by its user without Peace EQ. This portable release candidate has simulation and syntax tests; its generalized installation path has not been applied to a second physical device. Registry configuration is not proof of DSP processing or measured PUBG improvement.
+The original device-specific configuration was reported effective by its user without Peace EQ. Version 0.1.0 has passed simulation, syntax and GitHub Windows checks; its generalized installation path has not been applied to a second physical device. Registry configuration is not proof of DSP processing or measured PUBG improvement.
 
 ## Requirements
 
