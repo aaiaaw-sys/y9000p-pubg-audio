@@ -1,0 +1,19 @@
+name: Windows PowerShell checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Memory transactions and syntax (Windows PowerShell 5.1)
+        shell: powershell
+        run: .\tests\Run-Tests.ps1
+      - name: Validate public files and documentation
+        shell: powershell
+        run: .\tests\Check-PublicFiles.ps1
