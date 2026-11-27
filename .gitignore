@@ -1,0 +1,17 @@
+# Private machine state never belongs in a public repository.
+/runtime/
+/dist/
+*.log
+*.reg
+*.clixml
+*.zip
+*.tmp
+*.bak
+backup.json
+backup.sha256
+ownership.json
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode/
