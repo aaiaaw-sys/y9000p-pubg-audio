@@ -12,7 +12,7 @@ foreach($name in $files){
     if($file.Attributes -band [IO.FileAttributes]::ReparsePoint){throw 'Do not package symbolic links/reparse points.'}
 }
 if(!$OutputDirectory){$OutputDirectory=Join-Path $root 'dist'}
-$zip=Join-Path ([IO.Path]::GetFullPath($OutputDirectory)) 'y9000p-pubg-audio-0.1.0-rc.1.zip'
+$zip=Join-Path ([IO.Path]::GetFullPath($OutputDirectory)) 'y9000p-pubg-audio-0.1.0.zip'
 if(Test-Path -LiteralPath $zip){throw 'Archive already exists; choose a new output directory, no overwrite.'}
 if(!$Apply){[pscustomobject]@{DryRun=$true;Files=$files.Count;Output=$zip};return}
 [void][IO.Directory]::CreateDirectory((Split-Path -Parent $zip))
